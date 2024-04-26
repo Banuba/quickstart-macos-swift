@@ -7,19 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4AF7D1F2BDBB6A70075C84E /* quickstart_macos_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D1E2BDBB6A70075C84E /* quickstart_macos_swiftApp.swift */; };
+		F4AF7D1F2BDBB6A70075C84E /* QuickStartMacOSSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D1E2BDBB6A70075C84E /* QuickStartMacOSSwiftApp.swift */; };
 		F4AF7D212BDBB6A70075C84E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D202BDBB6A70075C84E /* ContentView.swift */; };
 		F4AF7D232BDBB6AB0075C84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AF7D222BDBB6AB0075C84E /* Assets.xcassets */; };
 		F4AF7D262BDBB6AB0075C84E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AF7D252BDBB6AB0075C84E /* Preview Assets.xcassets */; };
+		F4AF7D2F2BDBB8380075C84E /* BanubaEffectPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AF7D2E2BDBB8380075C84E /* BanubaEffectPlayer.framework */; };
+		F4AF7D302BDBB8380075C84E /* BanubaEffectPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AF7D2E2BDBB8380075C84E /* BanubaEffectPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4AF7D332BDBBAB00075C84E /* EffectPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D322BDBBAB00075C84E /* EffectPlayerView.swift */; };
+		F4AF7D352BDBBFE50075C84E /* BanubaClientToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D342BDBBFE50075C84E /* BanubaClientToken.swift */; };
+		F4AF7D372BDBC1070075C84E /* effects in Resources */ = {isa = PBXBuildFile; fileRef = F4AF7D362BDBC1070075C84E /* effects */; };
+		F4AF7D392BDBCEBE0075C84E /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF7D382BDBCEBE0075C84E /* Camera.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4AF7D312BDBB8380075C84E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4AF7D302BDBB8380075C84E /* BanubaEffectPlayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F4AF7D1B2BDBB6A70075C84E /* quickstart-macos-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quickstart-macos-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AF7D1E2BDBB6A70075C84E /* quickstart_macos_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickstart_macos_swiftApp.swift; sourceTree = "<group>"; };
+		F4AF7D1E2BDBB6A70075C84E /* QuickStartMacOSSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartMacOSSwiftApp.swift; sourceTree = "<group>"; };
 		F4AF7D202BDBB6A70075C84E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4AF7D222BDBB6AB0075C84E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4AF7D252BDBB6AB0075C84E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4AF7D272BDBB6AB0075C84E /* quickstart_macos_swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quickstart_macos_swift.entitlements; sourceTree = "<group>"; };
+		F4AF7D2E2BDBB8380075C84E /* BanubaEffectPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaEffectPlayer.framework; path = bnb_sdk/mac/BanubaEffectPlayer.framework; sourceTree = "<group>"; };
+		F4AF7D322BDBBAB00075C84E /* EffectPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectPlayerView.swift; sourceTree = "<group>"; };
+		F4AF7D342BDBBFE50075C84E /* BanubaClientToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanubaClientToken.swift; sourceTree = "<group>"; };
+		F4AF7D362BDBC1070075C84E /* effects */ = {isa = PBXFileReference; lastKnownFileType = folder; name = effects; path = bnb_sdk/effects; sourceTree = "<group>"; };
+		F4AF7D382BDBCEBE0075C84E /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AF7D2F2BDBB8380075C84E /* BanubaEffectPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +62,10 @@
 		F4AF7D122BDBB6A70075C84E = {
 			isa = PBXGroup;
 			children = (
+				F4AF7D362BDBC1070075C84E /* effects */,
 				F4AF7D1D2BDBB6A70075C84E /* quickstart-macos-swift */,
 				F4AF7D1C2BDBB6A70075C84E /* Products */,
+				F4AF7D2D2BDBB8380075C84E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +80,10 @@
 		F4AF7D1D2BDBB6A70075C84E /* quickstart-macos-swift */ = {
 			isa = PBXGroup;
 			children = (
-				F4AF7D1E2BDBB6A70075C84E /* quickstart_macos_swiftApp.swift */,
+				F4AF7D382BDBCEBE0075C84E /* Camera.swift */,
+				F4AF7D342BDBBFE50075C84E /* BanubaClientToken.swift */,
+				F4AF7D322BDBBAB00075C84E /* EffectPlayerView.swift */,
+				F4AF7D1E2BDBB6A70075C84E /* QuickStartMacOSSwiftApp.swift */,
 				F4AF7D202BDBB6A70075C84E /* ContentView.swift */,
 				F4AF7D222BDBB6AB0075C84E /* Assets.xcassets */,
 				F4AF7D272BDBB6AB0075C84E /* quickstart_macos_swift.entitlements */,
@@ -69,6 +100,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F4AF7D2D2BDBB8380075C84E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF7D2E2BDBB8380075C84E /* BanubaEffectPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +118,7 @@
 				F4AF7D172BDBB6A70075C84E /* Sources */,
 				F4AF7D182BDBB6A70075C84E /* Frameworks */,
 				F4AF7D192BDBB6A70075C84E /* Resources */,
+				F4AF7D312BDBB8380075C84E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AF7D372BDBC1070075C84E /* effects in Resources */,
 				F4AF7D262BDBB6AB0075C84E /* Preview Assets.xcassets in Resources */,
 				F4AF7D232BDBB6AB0075C84E /* Assets.xcassets in Resources */,
 			);
@@ -140,7 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AF7D212BDBB6A70075C84E /* ContentView.swift in Sources */,
-				F4AF7D1F2BDBB6A70075C84E /* quickstart_macos_swiftApp.swift in Sources */,
+				F4AF7D392BDBCEBE0075C84E /* Camera.swift in Sources */,
+				F4AF7D332BDBBAB00075C84E /* EffectPlayerView.swift in Sources */,
+				F4AF7D1F2BDBB6A70075C84E /* QuickStartMacOSSwiftApp.swift in Sources */,
+				F4AF7D352BDBBFE50075C84E /* BanubaClientToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +322,12 @@
 				DEVELOPMENT_TEAM = 8W9QCBMQCU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bnb_sdk/mac",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +354,12 @@
 				DEVELOPMENT_TEAM = 8W9QCBMQCU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bnb_sdk/mac",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
