@@ -57,6 +57,10 @@ private final class Renderer: NSObject, MTKViewDelegate {
         self.effectPlayer = effectPlayer
         self.commandQueue = commandQueue
     }
+    
+    deinit {
+        effectPlayer.surfaceDestroyed()
+    }
 
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
         effectPlayer.surfaceChanged(Int32(size.width), height: Int32(size.height))

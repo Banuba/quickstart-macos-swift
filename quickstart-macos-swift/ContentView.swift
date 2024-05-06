@@ -3,7 +3,6 @@ import BanubaEffectPlayer
 
 struct ContentView: View {
     let effectPlayerView = EffectPlayerView()
-    let camera = Camera()
     
     var processor: BNBFrameProcessor?
     
@@ -22,6 +21,7 @@ struct ContentView: View {
                 }
         }
         .task {
+            let camera = Camera()
             await camera.start()
             for await pixelBuffer in camera.previewStream {
                 let fd = BNBFrameData.create()
@@ -35,6 +35,7 @@ struct ContentView: View {
                 fd?.addFullImg(fullImageData)
                 processor?.push(fd)
             }
+            camera.stop()
         }
     }
 }
